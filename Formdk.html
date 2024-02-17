@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(23, 90, 214);
+        }
+       .form{
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px gray;
+        background-color: rgb(141, 184, 241);
+       }
+       .form-control{
+        width: 94%;
+        }
+        .form-control:focus{
+            background-color: yellow;
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            box-shadow: inset 0 0 5px rgb(233, 146, 214);
+        }
+        .btn:hover{
+            background-color: white;
+            color: #000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Form Liên Hệ</h1>
+    <form class="form" action="" method="post">
+        Họ Và Tên : <br>
+        <input class="form-control" type="text" name="" id=""> <br>
+        Giới Tính : 
+        <label for="">
+            <input type="radio" name="gender" id="">Nam
+            <input type="radio" name="gender" id="">Nữ
+        </label><br>
+        Quốc Tịch: <br>
+        <Select name="list" id="list">
+            <option value="United States">United States</option>
+            <option value="Việt Nam">Việt Nam</option>
+            <option value="Thái lan">Thái lan</option>
+            <option value="Lào">Lào</option>
+        </Select><br>
+
+        Sở Thích <br>
+        <label for="">
+            <input type="checkbox" name="">Thể Thao
+        </label><br>
+        <label for="">
+            <input type="checkbox" name="">Du Lịch
+        </label><br>
+        <label for="">
+            <input type="checkbox" name="">Ẩm Thực
+        </label><br>
+
+        Ghi chú: <br>
+        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea><br>
+        <hr>
+        <input class="btn" type="submit" value="submit">
+        <input class="btn" type="reset" value="reset">
+
+    </form>
+</body>
+</html>
